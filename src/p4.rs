@@ -1,7 +1,7 @@
 pub fn find_even_index(arr: &[i32]) -> Option<usize> {
     arr.iter()
         .enumerate()
-        .filter(|(i, n)| {
+        .filter(|(i, _n)| {
             &arr[0..*i].iter().sum::<i32>() | 0 == &arr[*i + 1..arr.len()].iter().sum::<i32>() | 0
         })
         .collect::<Vec<_>>()

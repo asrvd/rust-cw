@@ -17,5 +17,5 @@ fn main() {
         p3::accum("ZpglnRxqenU"),
         "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu"
     );
-    
+    assert_eq!(p4::find_even_index(&[1, 2, 3, 4, 3, 2, 1]), Some(3));
 }
