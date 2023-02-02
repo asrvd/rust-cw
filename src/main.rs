@@ -5,6 +5,7 @@
 mod p1;
 mod p2;
 mod p3;
+mod p4;
 
 fn main() {
     assert_eq!(p1::get_vowel_count("abracadabra"), 5);
@@ -16,4 +17,5 @@ fn main() {
         p3::accum("ZpglnRxqenU"),
         "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu"
     );
+    
 }
