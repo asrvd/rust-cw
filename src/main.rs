@@ -10,6 +10,8 @@ mod p5;
 mod p6;
 mod p7;
 mod p8;
+mod p9;
+mod p10;
 
 fn main() {
     assert_eq!(p1::get_vowel_count("abracadabra"), 5);
@@ -32,4 +34,5 @@ fn main() {
         "Ths wbst s fr lsrs LL!"
     );
     assert_eq!(p8::duplicate_encode("(( @"), "))((");
+    assert_eq!(p9::split_strings("abcdefg"), ["ab", "cd", "ef", "g_"]);
 }
