@@ -3,6 +3,9 @@
 // use std::io;
 
 mod p1;
+mod p10;
+mod p11;
+mod p12;
 mod p2;
 mod p3;
 mod p4;
@@ -11,7 +14,6 @@ mod p6;
 mod p7;
 mod p8;
 mod p9;
-mod p10;
 
 fn main() {
     assert_eq!(p1::get_vowel_count("abracadabra"), 5);
@@ -35,4 +37,6 @@ fn main() {
     );
     assert_eq!(p8::duplicate_encode("(( @"), "))((");
     assert_eq!(p9::split_strings("abcdefg"), ["ab", "cd", "ef", "g_"]);
+    assert_eq!(p11::bouncing_ball(3.0, 0.66, 1.5), 3);
+    assert_eq!(p12::valid_parentheses("((()))()"), true)
 }
