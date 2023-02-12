@@ -6,6 +6,7 @@ mod p1;
 mod p10;
 mod p11;
 mod p12;
+mod p13;
 mod p2;
 mod p3;
 mod p4;
@@ -38,5 +39,6 @@ fn main() {
     assert_eq!(p8::duplicate_encode("(( @"), "))((");
     assert_eq!(p9::split_strings("abcdefg"), ["ab", "cd", "ef", "g_"]);
     assert_eq!(p11::bouncing_ball(3.0, 0.66, 1.5), 3);
-    assert_eq!(p12::valid_parentheses("((()))()"), true)
+    assert_eq!(p12::valid_parentheses("((()))()"), true);
+    assert_eq!(p13::prime_factors(7775460), "(2**2)(3**3)(5)(7)(11**2)(17)");
 }
