@@ -30,20 +30,17 @@ pub fn prime_factors(n: i64) -> String {
     let mut prime_factors: Vec<_> = prime_factors.into_iter().collect();
     prime_factors.sort_by(|a, b| a.0.cmp(&b.0));
 
-    println!("{:?}", prime_factors);
+    // println!("{:?}", prime_factors);
 
-    format!(
-        "{}",
-        prime_factors
-            .iter()
-            .map(|(k, v)| {
-                if *v == 1 {
-                    format!("({})", k)
-                } else {
-                    format!("({}**{})", k, v)
-                }
-            })
-            .collect::<Vec<String>>()
-            .join("")
-    )
+    prime_factors
+        .iter()
+        .map(|(k, v)| {
+            if *v == 1 {
+                format!("({})", k)
+            } else {
+                format!("({}**{})", k, v)
+            }
+        })
+        .collect::<Vec<String>>()
+        .join("")
 }
