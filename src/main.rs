@@ -8,6 +8,7 @@ mod p11;
 mod p12;
 mod p13;
 mod p14;
+mod p15;
 mod p2;
 mod p3;
 mod p4;
@@ -43,4 +44,5 @@ fn main() {
     assert_eq!(p12::valid_parentheses("((()))()"), true);
     assert_eq!(p13::prime_factors(7775460), "(2**2)(3**3)(5)(7)(11**2)(17)");
     assert_eq!(p14::sq_in_rect(5, 3), Some(vec![3, 2, 1, 1]));
+    assert_eq!(p15::rot13("test"), "grfg");
 }
